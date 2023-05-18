@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+      
+      <header>
+            <nav class="flex justify-between items-center p-4 fixed w-full shadow-lg custom-black">
+              <a>
+                <img src="/assets/images/brand.png" />
+              </a>
+              <button class="block lg:hidden" id="menu-toggle" (click)="menuMobile()">
+                <img src="/assets/images/menu.png" width="25" height="25" />
+              </button>
+              <div class="hidden lg:block" id="menu">
+                <ul class="flex">
+                  <li class="px-5 border-b-2 border-transparent hover:border-custom-yellow hover:cursor-pointer">Sobre</li>
+                  <li class="px-5 border-b-2 border-transparent hover:border-custom-yellow hover:cursor-pointer">Projetos</li>
+                  <li class="px-5 border-b-2 border-transparent hover:border-custom-yellow hover:cursor-pointer">Habilidades</li>
+                  <li class="px-5 border-b-2 border-transparent hover:border-custom-yellow hover:cursor-pointer">Contato</li>
+                </ul>
+              </div>
+              <div class="hidden lg:hidden" id="mobile-menu">
+                <ul class="flex flex-col">
+                  <li class="px-5">Sobre</li>
+                  <li class="px-5">Projetos</li>
+                  <li class="px-5">Habilidades</li>
+                  <li class="px-5">Contato</li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          <main>
+            <!-- Perfil -->
+
+              <div class="flex justify-center items-center pt-36" id="self">
+                <div class="px-5 hidden sm:block">
+                  <img src="/assets/images/self.png" width="250" class="self">
+                </div>
+                <div class="px-5 max-w-md">
+                  <h1><strong>Olá, eu sou o Diego,</strong></h1>
+                  <p>prazer em conhecê-lo. Por favor, dê uma olhada!</p>
+                  <p>I am passionate about building excellent software that improves the lives of those around me. I specialize in creating software for clients ranging from individuals and small businesses all the way to large enterprise corporations. What would you do if you had a software expert available at your fingertips?</p>
+                </div>
+              </div>
+            
+       
+              <!-- Tecnologias -->
+                <div class="icon-list flex flex-col items-center my-14 py-14">
+                    <label class="text-left m-4">Algumas tecnologias que trabalho:</label>
+                    <ul class="flex mt-3">
+                      <li class="px-5"><img src="/assets/images/icon-list/git_alt_icon.png" width="60" height="60"></li>
+                      <li class="px-5"><img src="/assets/images/icon-list/html5_icon.png" width="60" height="60"></li>
+                      <li class="px-5"><img src="/assets/images/icon-list/css3_icon.png" width="60" height="60"></li>
+                      <li class="px-5"><img src="/assets/images/icon-list/sass_icon.png" width="60" height="60"></li>
+                      <li class="px-5"><img src="/assets/images/icon-list/js_icon.png" width="60" height="60"></li>
+                      <li class="px-5"><img src="/assets/images/icon-list/typescript_icon.png" width="60" height="60"></li>
+                      <li class="px-5"><img src="/assets/images/icon-list/angular_icon.png" width="60" height="60"></li>
+                      <li class="px-5"><img src="/assets/images/icon-list/react_icon.png" width="60" height="60"></li>
+                      <li class="px-5"><img src="/assets/images/icon-list/vue_icon.png" width="60" height="60"></li>
+                      <li class="px-5"><img src="/assets/images/icon-list/tailwind_icon.png" width="60" height="60"></li>
+                    </ul>
+                </div>
+                <!-- Projetos -->
+                <div class="container mx-auto text-center my-14 py-14">
+                  <div class="texto-com-borda m-8">Projetos</div>
+                  <div class="flex flex-wrap justify-center">
+                    <div class="item1">
+                      <div class="parent" onclick="">
+                        <div class="child bg-one">
+                          <a href="#" class="a-item">Pokedex</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item2">
+                      <div class="parent" onclick="">
+                        <div class="child bg-two">
+                          <a href="#" class="a-item">Lorem ipsum indolor lorem</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--clock-->
+                <!-- <app-clock></app-clock> -->
+          </main>   
+          <footer>
+            <div class="border-t-4 border-[#F7AF07] ">
+                 <div class="flex justify-between ax-w-lg m-auto p-8 justify-center">
+                  <div>
+                    <ul>
+                      <li>Sobre</li>
+                      <li>Projetos</li>
+                      <li>Habilidades</li>
+                      <li>Contato</li>
+                    </ul>
+
+                  </div>
+
+                  <div class="text-center">
+                    Midia sociais:
+                    <ul class="flex justify-center">
+                      <li><a href="#"><img src="/assets/images/midia/linkedin_icon.png" width="35" height="35"></a></li>
+                      <li><a href="#"><img src="/assets/images/midia/instagram_icon.png" width="35" height="35"></a></li>
+                    </ul>
+                  </div>
+                 </div>
+            </div>
+
+          </footer>   
+    </div>
+</body>
+</html>

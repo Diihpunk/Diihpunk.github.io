@@ -1,0 +1,25 @@
+
+<!-- <owl-carousel-o [options]="customOptions">
+  <ng-template carouselSlide><img src="/assets/images/icon-list/git_alt_icon.png"></ng-template> 
+  <ng-template carouselSlide><img src="/assets/images/icon-list/html5_icon.png"></ng-template> 
+  <ng-template carouselSlide><img src="/assets/images/icon-list/css3_icon.png"></ng-template> 
+  <ng-template carouselSlide><img src="/assets/images/icon-list/sass_icon.png"></ng-template> 
+  <ng-template carouselSlide><img src="/assets/images/icon-list/js_icon.png"></ng-template> 
+  <ng-template carouselSlide><img src="/assets/images/icon-list/typescript_icon.png"></ng-template> 
+  <ng-template carouselSlide><img src="/assets/images/icon-list/angular_icon.png"></ng-template> 
+  <ng-template carouselSlide><img src="/assets/images/icon-list/react_icon.png"></ng-template> 
+  <ng-template carouselSlide><img src="/assets/images/icon-list/vue_icon.png"></ng-template> 
+  <ng-template carouselSlide><img src="/assets/images/icon-list/tailwind_icon.png"></ng-template> 
+</owl-carousel-o> -->
+
+<div class="container mx-auto px-4">
+  <owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let slide of slidesStore">
+      <ng-template carouselSlide id="slide.id">
+        <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title" class="icon-img">
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</div>
+
+

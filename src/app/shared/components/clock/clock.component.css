@@ -1,0 +1,18 @@
+.item{
+    padding: 5px;
+    flex: 0 100px;
+    height: 100px;
+    background: #f7af07;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    border-radius: 100%;
+    text-align: center;
+}
+.teste{
+    align-content: space-between;
+    flex-wrap: wrap;
+    max-width: 800px;
+    gap: 10px;
+    margin: 0 auto;
+}
