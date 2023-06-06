@@ -1,0 +1,45 @@
+<header class="fixed top-0 left-0 w-full z-10 bg-black shadow-lg">
+    <nav class="flex justify-between  items-center p-4">
+      <a>
+        <a routerLink="/" routerLinkActive="active">
+          <img src="/assets/images/brand.png" />
+        </a>
+      </a>
+      <button class="block lg:hidden" id="menu-toggle" (click)="menuMobile()">
+        <img src="/assets/images/menu.png" width="25" height="25" />
+      </button>
+      <div class="hidden lg:block" id="menu">
+        <ul class="flex gap-6">
+          <li class="menu-item">
+            <a routerLink="/sobre" routerLinkActive="active">Sobre</a>
+          </li>
+          <li class="menu-item">
+            <a routerLink="/projetos" routerLinkActive="active">Projetos</a>
+          </li>
+          <li class="menu-item">
+            <a routerLink="/habilidades" routerLinkActive="active">Habilidades</a>
+          </li>
+          <li class="menu-item">
+            <a routerLink="/contatos" routerLinkActive="active">Contato</a>
+          </li>
+        </ul>
+      </div>
+      <div class="hidden lg:hidden mobile-menu" id="mobile-menu">
+        <header class="text-right" (click)="menuMobile()">X</header>
+        <ul class="flex flex-col">
+          <li>
+            <a routerLink="/sobre" routerLinkActive="active">Sobre</a>
+          </li>
+          <li>
+            <a routerLink="/projetos" routerLinkActive="active">Projetos</a>
+          </li>
+          <li>
+            <a routerLink="/habilidades" routerLinkActive="active">Habilidades</a>
+          </li>
+          <li>
+            <a routerLink="/contatos" routerLinkActive="active">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>

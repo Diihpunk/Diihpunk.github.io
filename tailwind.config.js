@@ -22,7 +22,10 @@ module.exports = {
     extend: {
       colors: {
         'custom-yellow': '#F7AF07',
-      }
+      },
+      container: {
+        center: true,
+      },
     },
   },
   plugins: [],

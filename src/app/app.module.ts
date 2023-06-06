@@ -7,18 +7,30 @@ import { CarouselSlideComponent } from './carousel-slide/carousel-slide.componen
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ClockComponent } from './shared/components/clock/clock.component';
+import { SobreComponent } from './sobre/sobre.component';
+import { RouterModule } from '@angular/router';
+import { ProjetosComponent } from './projetos/projetos.component';
+import { HabilidadesComponent } from './habilidades/habilidades.component';
+import { ContatosComponent } from './contatos/contatos.component';
+import { NavComponent } from './shared/components/clock/nav/nav.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CarouselSlideComponent,
-    ClockComponent 
+    ClockComponent,
+    SobreComponent,
+    ProjetosComponent,
+    HabilidadesComponent,
+    ContatosComponent,
+    NavComponent 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
+    RouterModule,
     BrowserAnimationsModule
   ],
   providers: [],

@@ -10,12 +10,9 @@
     object-fit: cover;
   }
 /* projetos css*/
-
 .item{
   flex: 1 1 200px;
 }
-
-
 .right {float: right !important;}
 /* Image zoom on hover + Overlay colour */
 .parent {
@@ -23,14 +20,13 @@
     width: 200px;
     margin: 20px;
     height: 200px;
-    border: 1px solid blue;
+    border: 1px solid #ffffff;
     overflow: hidden;
     position: relative;
-    float: left;
+    /* float: left; */
     display: inline-block;
   cursor: pointer;
 }
-
 .child {
     height: 100%;
     width: 100%;
@@ -41,13 +37,19 @@
     -o-transition: all .5s;
     transition: all .5s;
 }
-/* Several different images */
-.bg-one {background-image: url(/assets/images/projetos/pokedex.png);background-size: 200px 80px;
-  background-position: center;}
-.bg-two {background-image: url(/assets/images/projetos/image1.png);}
+.child img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg-one {
+  background-color: white;
+}
+
 .a-item {
   display: none;
-  font-size: 35px;
+  font-size: 20px;
   color: #F7AF07 !important;
   font-weight: 700;
   font-family: sans-serif;
@@ -62,6 +64,7 @@
   cursor: pointer;
   /*text-decoration: none;*/
 }
+
 
 .parent:hover .child, .parent:focus .child {
   -ms-transform: scale(1.2);
@@ -92,7 +95,8 @@
 
 /* Media Queries */
 @media screen and (max-width: 960px) {
-  .parent {width: 100%; margin: 20px 0px}
+  .parent {width: 100%; margin: 20px 0px;padding: 10px;
+    border: none;}
   .wrapper {padding: 20px 20px;}
 }
 .texto-com-borda {
@@ -116,5 +120,7 @@
   background: #323232;
 }
 
-
-
+/*menu footer*/
+.item-footer:hover{
+  color:#F7AF07; ;
+}

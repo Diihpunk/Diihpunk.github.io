@@ -8,44 +8,17 @@
 </head>
 <body>
     <div>
-      
-      <header>
-            <nav class="flex justify-between items-center p-4 fixed w-full shadow-lg custom-black">
-              <a>
-                <img src="/assets/images/brand.png" />
-              </a>
-              <button class="block lg:hidden" id="menu-toggle" (click)="menuMobile()">
-                <img src="/assets/images/menu.png" width="25" height="25" />
-              </button>
-              <div class="hidden lg:block" id="menu">
-                <ul class="flex">
-                  <li class="px-5 border-b-2 border-transparent hover:border-custom-yellow hover:cursor-pointer">Sobre</li>
-                  <li class="px-5 border-b-2 border-transparent hover:border-custom-yellow hover:cursor-pointer">Projetos</li>
-                  <li class="px-5 border-b-2 border-transparent hover:border-custom-yellow hover:cursor-pointer">Habilidades</li>
-                  <li class="px-5 border-b-2 border-transparent hover:border-custom-yellow hover:cursor-pointer">Contato</li>
-                </ul>
-              </div>
-              <div class="hidden lg:hidden" id="mobile-menu">
-                <ul class="flex flex-col">
-                  <li class="px-5">Sobre</li>
-                  <li class="px-5">Projetos</li>
-                  <li class="px-5">Habilidades</li>
-                  <li class="px-5">Contato</li>
-                </ul>
-              </div>
-            </nav>
-          </header>
           <main>
             <!-- Perfil -->
-
-              <div class="flex justify-center items-center pt-36" id="self">
-                <div class="px-5 hidden sm:block">
+              <div class="flex justify-center items-center pt-36 flex-wrap" id="self">
+                <div class="px-5">
                   <img src="/assets/images/self.png" width="250" class="self">
                 </div>
                 <div class="px-5 max-w-md">
                   <h1><strong>Olá, eu sou o Diego,</strong></h1>
-                  <p>prazer em conhecê-lo. Por favor, dê uma olhada!</p>
-                  <p>I am passionate about building excellent software that improves the lives of those around me. I specialize in creating software for clients ranging from individuals and small businesses all the way to large enterprise corporations. What would you do if you had a software expert available at your fingertips?</p>
+                  <p class="mt-3">prazer em conhecê-lo. Por favor, dê uma olhada!</p>
+                  <p>Sou apaixonado por construir software que melhora a vida daqueles ao meu redor. sou especializado em criar software para clientes que vão desde indivíduos e pequenas empresas 
+                    até grandes corporações empresariais. O que você faria se tivesse um especialista em software disponível ao seu alcance?</p>
                 </div>
               </div>
             
@@ -67,52 +40,41 @@
                     </ul>
                 </div>
                 <!-- Projetos -->
-                <div class="container mx-auto text-center my-14 py-14">
+                <div class="container mx-auto text-center my-14 py-14" id="projetos">
                   <div class="texto-com-borda m-8">Projetos</div>
                   <div class="flex flex-wrap justify-center">
-                    <div class="item1">
-                      <div class="parent" onclick="">
+                      <div class="parent rounded"  *ngFor="let item of  projectList" >
                         <div class="child bg-one">
-                          <a href="#" class="a-item">Pokedex</a>
+                          <img [src]="item.urlImg" width="200" height="80">
+                          <a [href]="item.link" target="_blank" class="a-item">{{item.nome}}</a>
                         </div>
                       </div>
-                    </div>
-                    <div class="item2">
-                      <div class="parent" onclick="">
-                        <div class="child bg-two">
-                          <a href="#" class="a-item">Lorem ipsum indolor lorem</a>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
 
-                <!--clock-->
-                <!-- <app-clock></app-clock> -->
+            <!--clock-->
+            <!-- <app-clock></app-clock> -->
           </main>   
           <footer>
             <div class="border-t-4 border-[#F7AF07] ">
-                 <div class="flex justify-between ax-w-lg m-auto p-8 justify-center">
-                  <div>
+                 <div class="flex ax-w-lg m-auto p-8 justify-center container mx-auto items-center items-baseline">
+                  <div class="m-5">
                     <ul>
-                      <li>Sobre</li>
-                      <li>Projetos</li>
-                      <li>Habilidades</li>
-                      <li>Contato</li>
+                      <a routerLink="/sobre" routerLinkActive="active"><li class="item-footer">Sobre</li></a>
+                      <a routerLink="/sobre" routerLinkActive="active"><li class="item-footer">Projetos</li></a>
+                      <a routerLink="/sobre" routerLinkActive="active"><li class="item-footer">Habilidades</li></a>
+                      <a routerLink="/sobre" routerLinkActive="active"><li class="item-footer">Contato</li></a>
                     </ul>
-
                   </div>
-
-                  <div class="text-center">
+                  <div class="text-center m-5">
                     Midia sociais:
-                    <ul class="flex justify-center">
-                      <li><a href="#"><img src="/assets/images/midia/linkedin_icon.png" width="35" height="35"></a></li>
-                      <li><a href="#"><img src="/assets/images/midia/instagram_icon.png" width="35" height="35"></a></li>
+                    <ul class="flex justify-center gap-3">
+                      <li><a href="https://www.linkedin.com/in/diego-antonio-da-silva-300603177/"><img src="/assets/images/midia/linkedin_icon.png" width="35" height="35"></a></li>
+                      <li><a href="https://www.instagram.com/diihpunk/"><img src="/assets/images/midia/instagram_icon.png" width="35" height="35"></a></li>
                     </ul>
                   </div>
                  </div>
             </div>
-
           </footer>   
     </div>
 </body>

@@ -1,0 +1,13 @@
+/*menu mobile*/
+.mobile-menu{
+    position: absolute;
+    background: white;
+    width: 100%;
+    color: black;
+    top: 0;
+    padding: 10px;
+    left: 0;
+}
+.menu-item:hover{
+    color:#F7AF07; 
+}
